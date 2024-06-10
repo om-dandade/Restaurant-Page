@@ -116,7 +116,37 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n\r\n\r\nconsole.log(\"javascript is connected to html!\");\n\n//# sourceURL=webpack://restaurant-page/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _modules_homePage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/homePage */ \"./src/modules/homePage.js\");\n/* harmony import */ var _modules_menuPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/menuPage */ \"./src/modules/menuPage.js\");\n/* harmony import */ var _modules_aboutPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/aboutPage */ \"./src/modules/aboutPage.js\");\n\r\n\r\n\r\n\r\n\r\nconst homePage = (0,_modules_homePage__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\ndocument.body.appendChild(homePage);\r\n\r\nconst homeButton = document.querySelector('#homeButton');\r\nconst menuButton = document.querySelector('#menuButton');\r\nconst aboutButton = document.querySelector('#aboutButton');\r\n\r\nhomeButton.addEventListener('click', () => {\r\n    const content = document.querySelector('.content');\r\n    if(content)document.body.removeChild(content);\r\n    const homePage = (0,_modules_homePage__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n    document.body.appendChild(homePage);\r\n});\r\n\r\nmenuButton.addEventListener('click', () => {\r\n    const content = document.querySelector('.content');\r\n    if(content)document.body.removeChild(content);\r\n    const menuPage = (0,_modules_menuPage__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n    document.body.appendChild(menuPage);\r\n});\r\n\r\naboutButton.addEventListener('click', () => {\r\n    const content = document.querySelector('.content');\r\n    if(content)document.body.removeChild(content);\r\n    const aboutPage = (0,_modules_aboutPage__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n    document.body.appendChild(aboutPage);\r\n});\n\n//# sourceURL=webpack://restaurant-page/./src/main.js?");
+
+/***/ }),
+
+/***/ "./src/modules/aboutPage.js":
+/*!**********************************!*\
+  !*** ./src/modules/aboutPage.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst generateAboutPage = () => {\r\n  const aboutPage = document.createElement('div');\r\n  aboutPage.classList.add('content');\r\n  aboutPage.innerHTML = `\r\n    <h1>About Page</h1>\r\n    <p>This is the about page</p>\r\n  `;\r\n  return aboutPage;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateAboutPage);\n\n//# sourceURL=webpack://restaurant-page/./src/modules/aboutPage.js?");
+
+/***/ }),
+
+/***/ "./src/modules/homePage.js":
+/*!*********************************!*\
+  !*** ./src/modules/homePage.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst generateHomePage = () => {\r\n    const homePage = document.createElement('div');\r\n    homePage.classList.add('content');\r\n    homePage.innerHTML = `\r\n    <h1>Welcome to The Baratie</h1>\r\n    <h3>The Finest Floating Restaurant on the Grand Line!</h3>\r\n    <p>Welcome aboard the Baratie, where the culinary dreams of the seas come to life! \r\n        Owned and operated by the legendary chef and former pirate, \r\n        Red-Leg Zeff, our restaurant is renowned for serving the most exquisite dishes \r\n        to seafarers from all corners of the world. Whether you're a pirate, marine, or a \r\n        wandering adventurer, a delectable dining experience awaits you at the Baratie.\r\n    </p>\r\n    <h2>Discover Baratie: A Culinary Haven on the High Seas</h2>\r\n    <p>\r\n        At Baratie, we offer more than just a meal. Our floating restaurant is a sanctuary \r\n        for those who seek adventure and fine dining. Here are some of the features that make \r\n        Baratie a unique dining destination:\r\n    </p>\r\n    <h3>Stunning Ocean Views</h3>\r\n    <p>\r\n        Enjoy panoramic views of the open sea from every seat in the house. \r\n        Our restaurant's design ensures that you can savor your meal while taking \r\n        in the breathtaking beauty of the ocean.\r\n    </p>\r\n    <h3>Live Cooking Shows</h3>\r\n    <p>\r\n        Witness the culinary magic of our chefs in real-time! With open kitchens and \r\n        live cooking shows, you can watch as your meal is prepared with skill and \r\n        precision by Sanji and our talented crew.\r\n    </p>\r\n    <h3>Nautical Ambiance</h3>\r\n    <p>\r\n        Experience the charm of the sea with our nautical-themed decor. \r\n        From the ship-like architecture to maritime artifacts, \r\n        every detail at Baratie is designed to transport you to a world of \r\n        nautical adventure.\r\n    </p>\r\n    <h3>Pirate-Friendly Environment</h3>\r\n    <p>\r\n        Baratie welcomes all guests, from marines to pirates. \r\n        Our inclusive and friendly atmosphere ensures that everyone \r\n        feels at home, regardless of their background or allegiance.\r\n    </p>\r\n    `;\r\n    return homePage;\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateHomePage);\n\n//# sourceURL=webpack://restaurant-page/./src/modules/homePage.js?");
+
+/***/ }),
+
+/***/ "./src/modules/menuPage.js":
+/*!*********************************!*\
+  !*** ./src/modules/menuPage.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst generateMenuPage = () => {\r\n    const menuPage = document.createElement('div');\r\n    menuPage.classList.add('content');\r\n    menuPage.innerHTML = `\r\n        <h1>Menu</h1>\r\n        `;\r\n\r\n    return menuPage;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateMenuPage);\n\n//# sourceURL=webpack://restaurant-page/./src/modules/menuPage.js?");
 
 /***/ })
 
