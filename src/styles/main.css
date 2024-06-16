@@ -1,7 +1,21 @@
-body{
-    background-color: #D8EFD3;
+
+.navBar{
+    background-color: red;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 10vw;
+    overflow: hidden;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
 }
 
-.header{
-    background-color: red;
+.navBar ul{
+    padding: 0;
+    margin: 5%;
+    display: grid;
+    justify-content: center;
 }
