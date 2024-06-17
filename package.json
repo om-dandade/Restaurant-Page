@@ -12,7 +12,10 @@
   "author": "Om Dandade",
   "license": "ISC",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
     "style-loader": "^4.0.0",
     "webpack": "^5.91.0",

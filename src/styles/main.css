@@ -19,3 +19,15 @@
     display: grid;
     justify-content: center;
 }
+
+#homeButton{
+    background-image: url('/src/assets/icons/home.svg'); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the button */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+    width: 100px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    border: none; /* Remove the default border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    outline: none; /* Remove the outline on focus */
+}
