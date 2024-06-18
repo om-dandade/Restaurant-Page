@@ -5,7 +5,7 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 10vw;
+    width: 4vw;
     overflow: hidden;
     display: flexbox;
     flex-direction: column;
@@ -20,14 +20,15 @@
     justify-content: center;
 }
 
-#homeButton{
-    background-image: url('/src/assets/icons/home.svg'); /* Path to your image */
-    background-size: cover; /* Ensure the image covers the button */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-position: center; /* Center the image */
-    width: 100px; /* Set the desired width */
-    height: 100px; /* Set the desired height */
-    border: none; /* Remove the default border */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    outline: none; /* Remove the outline on focus */
+.navButton{
+    margin: auto;
+    background-image: url('/src/assets/icons/home.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 3.5vw;
+    height: 3.5vw;
+    cursor: pointer;
 }

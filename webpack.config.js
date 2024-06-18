@@ -8,6 +8,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
+        assetModuleFilename: 'images/[hash][ext][query]'
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -19,29 +20,16 @@ module.exports = {
         rules: [
             {
                 test: /\.html$/i,
-                use: [
-                    {
-                        loader: 'html-loader',
-                        options: {
-                            esModule: false
-                        }
-                    }
-                ]
+                use: ['html-loader']
             },
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader']
             },
-            // {
-            //     test: /\.(png|svg|jpg|jpeg|gif)$/i,
-            //     use: {
-            //         loader: 'file-loader',
-            //         options: {
-            //             name: '[name].[hash].[ext]',
-            //             outputPath: 'images'
-            //         }
-            //     }
-            // }
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource'
+            }
         ]
     }
 }
