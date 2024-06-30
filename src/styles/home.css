@@ -1,0 +1,33 @@
+
+
+#baratieLogo{
+    width: 30vw;
+}
+
+#titleText{
+    width: 200px;
+}
+
+.subText{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+
+.centeredText{
+    text-align: center;
+}
+.alignLeft{
+    text-align: left;
+}
+.alignRight{
+    text-align: right;
+}
+
+.pageImage{
+    height: 30vw;
+    margin: .5vw;
+}
+.smallPageImage{
+    height: 20vw;
+    margin: .5vw;
+}

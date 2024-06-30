@@ -1,9 +1,16 @@
+
+
 const generateAboutPage = () => {
   const aboutPage = document.createElement('div');
   aboutPage.classList.add('content');
   aboutPage.innerHTML = `
+<div id="aboutTopBar" class="topBar">
     <h1>About Page</h1>
-    <p>This is the about page</p>
+</div>
+    
+<div class="smallWidthBox">
+    <p class="centeredText">This is aboutPage</p>
+</div>
   `;
   return aboutPage;
 };

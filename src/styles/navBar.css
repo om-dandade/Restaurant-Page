@@ -1,0 +1,75 @@
+:root{
+    --bluePrimary: #0BC1D6;
+    --blueAccent: #01a1b6;
+}
+.navBar{
+    background-color: var(--bluePrimary);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 4vw;
+    overflow: hidden;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navBar:hover{
+    width: 10vw;
+}
+
+.navBar ul{
+    padding: 0;
+    margin: 2px;
+    display: grid;
+    justify-content: left;
+}
+
+.navTab{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 15vw;
+    cursor: pointer;
+}
+.currentNavTab{
+    background-color: var(--blueAccent);
+    box-shadow: 0px 0px 10px 10px var(--blueAccent);
+}
+
+.nonSelectable{
+    user-select: none;
+}
+
+.navTabIcon{
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 4vw;
+    height: 4vw;
+    margin: 8px 0 8px 0;
+}
+
+.navTab:hover .navTabIcon{
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+#homeIcon{
+    background-image: url('/src/assets/icons/home.png');
+}
+
+#menuIcon{ 
+    background-image: url('/src/assets/icons/menu.png');
+}
+
+#aboutIcon{
+    background-image: url('/src/assets/icons/info.png');
+}

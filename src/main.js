@@ -1,4 +1,7 @@
 import './styles/main.css';
+import './styles/navBar.css';
+import './styles/home.css';
+import './styles/menu.css';
 import generateHomePage from './modules/homePage';
 import generateMenuPage from './modules/menuPage';
 import generateAboutPage from './modules/aboutPage';
@@ -24,6 +27,8 @@ const ChangeCurrentTab = (clickedTab) =>{
 homeNavTab.addEventListener('click', () => {
     clearContent();
     const homePage = generateHomePage();
+    document.body.classList.remove("menuBackground");
+    document.body.classList.remove("aboutBackground");
     document.body.appendChild(homePage);
     ChangeCurrentTab(homeNavTab);
 });
@@ -31,6 +36,8 @@ homeNavTab.addEventListener('click', () => {
 menuNavTab.addEventListener('click', () => {
     clearContent();
     const menuPage = generateMenuPage();
+    document.body.classList.remove("aboutBackground");
+    document.body.classList.add("menuBackground");
     document.body.appendChild(menuPage);
     ChangeCurrentTab(menuNavTab);
 });
@@ -38,6 +45,8 @@ menuNavTab.addEventListener('click', () => {
 aboutNavTab.addEventListener('click', () => {
     clearContent();
     const aboutPage = generateAboutPage();
+    document.body.classList.remove("menuBackground");
+    document.body.classList.add("aboutBackground");
     document.body.appendChild(aboutPage);
     ChangeCurrentTab(aboutNavTab);
 });

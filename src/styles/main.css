@@ -1,81 +1,39 @@
-:root{
-    --blue1: #050C9C;
-    --blue2: #3572EF;
-    --blue3: #3ABEF9;
-    --blue4: #A7E6FF;
-    --blue4-shadow: #a5e1f9;
-}
-.navBar{
-    background-color: var(--blue4);
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 4vw;
-    overflow: hidden;
-    display: flexbox;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    
-    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+body{
+    margin-right: 5vw;
+    margin-left: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.navBar:hover{
-    width: 10vw;
+.titleFont{
+    font-family: Tahoma;
 }
 
-.navBar ul{
-    padding: 0;
-    margin: 2px;
-    display: grid;
-    justify-content: left;
-}
-
-.navTab{
+.topBar{
+    background-color: #F0EBD6;
+    box-shadow: 0px 0px 50px 60px #F0EBD6;
     display: flex;
     align-items: center;
-    border-radius: 20px;
-    width: 15vw;
-    cursor: pointer;
+    justify-content: center;
+    user-select: none;
 }
 
-.navTab:hover{
-    background-color: var(--blue4-shadow);
+.menuBackground{
+    background-image: url('/src/assets/images/foodBackground.png');
+    background-size: cover;
+}
+.aboutBackground{
+    background-image: url(/src/assets/images/aboutBackground.jpg);
+    background-size: cover;
 }
 
-.currentNavTab{
-    background-color: var(--blue3);
-}
-.currentNavTab:hover{
-    background-color: var(--blue3);
+.centeredGridBox{
+    display: grid;
+    justify-items: center;
 }
 
-.navTabIcon{
-    margin: auto;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    border: none;
-    width: 3.5vw;
-    height: 3.5vw;
-    margin: 8px 0 8px 0;
-}
-
-.navTab:hover .navTabIcon{
-    transform: scale(1.1);
-    transition: transform 0.2s;
-}
-
-#homeIcon{
-    background-image: url('/src/assets/icons/home.svg');
-}
-
-#menuIcon{ 
-    background-image: url('/src/assets/icons/menu.svg');
-}
-
-#aboutIcon{
-    background-image: url('/src/assets/icons/info.svg');
+.smallWidthBox{
+    width: 80vw;
+    display: flex;
+    align-items: center;
 }

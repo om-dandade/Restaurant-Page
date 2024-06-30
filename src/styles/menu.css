@@ -1,0 +1,25 @@
+.foodItemCard{
+    width: 60vw;
+    height: 30vw;
+    background-color: #F0EBD6;
+    margin: 10px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    box-shadow: 0 0 10px #F0EBD6;
+}
+
+#menuTopBar{
+    margin-bottom: 8vw;
+}
+
+.menuContent{
+    display: flex;
+    align-items: center;
+    width: 50vw;
+}
+
+.foodDescription{
+    margin-right: 50px;
+    text-align: center;
+}
