@@ -3,12 +3,11 @@
 const generateAboutPage = () => {
   return `
 <div id="aboutTopBar" class="topBar">
-    <h1>About Page</h1>
+    <h1>Our Story</h1>
 </div>
     
 <div class="centeredGridBox">
     <div class="aboutInfoCard">
-        <h2 class="titleFont centeredText">Our Story</h2>
         <p class="centeredText">
           The Baratie was born from a promise, a promise made by Captain Zeff to a
           starving young pirate named Sanji. After surviving a shipwreck and sharing 
