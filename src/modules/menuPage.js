@@ -4,9 +4,7 @@ import seafoodPaella from '/src/assets/images/seafoodPaella.jpg'
 import soup from '/src/assets/images/soup.jpg'
 
 const generateMenuPage = () => {
-    const menuPage = document.createElement('div');
-    menuPage.classList.add('content');
-    menuPage.innerHTML = `
+    return `
 <div id="menuTopBar" class="topBar">
     <h1>Menu</h1>
 </div>
@@ -69,9 +67,7 @@ const generateMenuPage = () => {
         </div>
     </div>
 </div>
-        `;
-
-    return menuPage;
+    `;
 };
 
 export default generateMenuPage;

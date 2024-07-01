@@ -6,9 +6,7 @@ import sanjiWithSalt from '/src/assets/images/sanjiWithSalt.webp'
 import pirateFriendly from '/src/assets/images/pirateFriendly.jpg'
 
 const generateHomePage = () => {
-    const homePage = document.createElement('div');
-    homePage.classList.add('content');
-    homePage.innerHTML = `
+    return `
 <div class="topBar">
     <img id="baratieLogo" src="${baratieLogo}" />
     <div id="titleText">
@@ -97,7 +95,6 @@ const generateHomePage = () => {
     </div>
 </div>
     `;
-    return homePage;
 }
 
 export default generateHomePage;
